@@ -2271,6 +2271,11 @@ body.is-touch .main {
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, top center;
+
+  .content {
+    bottom: 100px;
+    position: fixed;
+  }
 }
 
 #zero {
@@ -2325,26 +2330,4 @@ body.is-touch .main {
   background-position: top left, center center;
 }
 
-#m2-1 {
-  background: url("images/overlay.png"), url("../../images/m2-1.jpg");
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
-  
-  .content {
-    bottom: 80px;
-    position: fixed;
-  }
-}
 
-#m2-2 {
-  background: url("images/overlay.png"), url("../../images/m2-2.jpg");
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
-
-  .content {
-    bottom: 80px;
-    position: fixed;
-  }
-}
