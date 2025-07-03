@@ -1954,7 +1954,7 @@ body.is-touch .poptrox-popup .closer {
   left: 0;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255);
   height: 3em;
   line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2215,11 +2215,34 @@ body.is-touch .main {
 }
 
 @media screen and (max-width: 736px) {
+  #intro,
+  #zero,
+  #one,
+  #two,
+  #three,
+  #sdb,
+  #five {
+    display: none;
+  }
+  #intro-zero-mobile,
+  #one-two-mobile,
+  #three-four-mobile,
+  #sdb-mobile,
+  #five-mobile {
+    display: flex;
+    padding: 1em 10px 1em 10px;
+
+    header {
+      margin-bottom: 0em !important;
+    }
+  }
+
   .main > .content br {
     display: none;
   }
 
   .main.fullscreen {
+    min-height: auto;
     height: auto !important;
   }
 
@@ -2303,7 +2326,7 @@ body.is-touch .main {
 }
 
 #two {
-  background: url("images/overlay.png"), url("../../images/two.png");
+  background: url("images/overlay.png"), url("../../images/two.jpg");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
@@ -2317,7 +2340,7 @@ body.is-touch .main {
 }
 
 #sdb {
-  background: url("images/overlay.png"), url("../../images/sdb.png");
+  background: url("images/overlay.png"), url("../../images/sdb.jpg");
   background-size: 256px 256px, cover;
   background-attachment: fixed, fixed;
   background-position: top left, center center;
@@ -2330,4 +2353,6 @@ body.is-touch .main {
   background-position: top left, center center;
 }
 
-
+.hidden {
+  display: none;
+}
